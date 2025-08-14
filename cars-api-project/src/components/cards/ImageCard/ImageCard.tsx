@@ -8,7 +8,7 @@ import process from "process";
 
 const ImageCard = ({
   loading = true,
-  imageUrl = process.env["REACT_APP_DEFAULT_CAR_IMG"],
+  imageUrl = process.env.REACT_APP_DEFAULT_CAR_IMG,
   height = "",
   altText = "Image",
   loadingText = "Loading image...",

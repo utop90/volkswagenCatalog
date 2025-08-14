@@ -4,7 +4,7 @@ import { apiResponse, CarModel } from "types/types";
 import process from "process";
 
 
-const API_URL = process.env["REACT_APP_API_URL"] as string;
+const API_URL = process.env.REACT_APP_API_URL as string;
 
 // Retrieve all Volkswagen cars
 export async function fetchVolkswagenCars() {
