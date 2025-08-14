@@ -23,7 +23,6 @@ export default function CarFormModal({
     description: "",
     isDieselCar: false,
   });
-
   // Store the car if it is edited mode
   useEffect(() => {
     if (carToEdit) {
