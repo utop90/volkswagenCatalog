@@ -123,6 +123,7 @@ function CarCard(props: CarModel) {
               setLoading(false);
             }}
             onError={() => setLoading(false)}
+            aria-label="car-card"
           />
         </Box>
 
