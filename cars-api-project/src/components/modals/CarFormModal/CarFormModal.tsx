@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+
+/* mui */
 import {
   Typography,
   TextField,
@@ -6,11 +8,14 @@ import {
   Box,
   useMediaQuery,
 } from "@mui/material";
+import theme from "theme/theme";
+/* redux */
 import { useSelector } from "react-redux";
+import { RootState } from "reduxStore/store";
+
+/* local components */
 import CarModal from "components/modals/CarReusableModal/CarReusableModal";
 import { CarFormModalProps, CarModel } from "types/types";
-import { RootState } from "reduxStore/store";
-import theme from "theme/theme";
 
 export default function CarFormModal({
   open,
