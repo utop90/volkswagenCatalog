@@ -1,15 +1,21 @@
 import { useState } from "react";
-import { Box, Button, Typography } from "@mui/material";
+/* types */
+import { DashboardControlPanelProps, YearsRange } from "types/types";
+
+/* redux */
+import { useDispatch } from "react-redux";
+import { resetCars } from "reduxStore/slices/carsSlice";
+/* local components */
+import SortPopover from "components/popovers/SortPopover/SortPopover";
+import FilterPopover from "components/popovers/FilterPopover/FilterPopover";
+/* mui */
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import SortIcon from "@mui/icons-material/Sort";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
-import { useDispatch } from "react-redux";
-import { resetCars } from "reduxStore/slices/carsSlice";
-import { DashboardControlPanelProps, YearsRange } from "types/types";
-import SortPopover from "components/popovers/SortPopover/SortPopover";
-import FilterPopover from "components/popovers/FilterPopover/FilterPopover";
+import { Box, Button, Typography } from "@mui/material";
 import { useStyles } from "./styles";
+/* assets */
 import logo from "assets/images/logo.png";
 
 export default function DashboardControlPanel({
