@@ -27,6 +27,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -54,7 +55,11 @@
     "@testing-library/react": "^16.3.0",
     "@types/redux-mock-store": "^1.5.0",
     "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
     "node-polyfill-webpack-plugin": "^4.1.0",
-    "redux-mock-store": "^1.5.5"
+    "redux-mock-store": "^1.5.5",
+    "typescript-eslint": "^8.39.1"
   }
 }
