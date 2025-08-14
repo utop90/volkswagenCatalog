@@ -7,7 +7,7 @@ const ImageCard = ({
   imageUrl = process.env.REACT_APP_DEFAULT_CAR_IMG,
   height = "",
   altText = "Image",
-  loadingText = "Loading image..."
+  loadingText = "Loading image...",
 }: ImageCardProps) => {
   return (
     <Card sx={cardStyle}>

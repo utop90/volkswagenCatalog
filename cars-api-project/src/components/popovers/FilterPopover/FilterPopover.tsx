@@ -19,7 +19,7 @@ export default function FilterPopover({
       onClose={onClose}
       anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
       transformOrigin={{ vertical: "top", horizontal: "left" }}
-      PaperProps={{ sx: { p: 2, minWidth: 220 } }}
+      slotProps={{ paper: { sx: {p: 2, minWidth: 220 }} }}
     >
       <Stack spacing={2}>
         <FormControl fullWidth size="small">
