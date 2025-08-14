@@ -3,7 +3,6 @@ import { apiResponse, CarModel } from "types/types";
 /* deno */
 import process from "process";
 
-
 const API_URL = process.env.REACT_APP_API_URL as string;
 
 // Retrieve all Volkswagen cars
@@ -13,8 +12,13 @@ export async function fetchVolkswagenCars() {
   return data;
 }
 
-// Add a new car to the catalog 
-export async function addNewCar(carData: { model: string; year: string | number; description?: string; photo?: string }) {
+// Add a new car to the catalog
+export async function addNewCar(carData: {
+  model: string;
+  year: string | number;
+  description?: string;
+  photo?: string;
+}) {
   const dataToSend = [
     {
       model: carData.model,
@@ -41,7 +45,7 @@ export async function addNewCar(carData: { model: string; year: string | number;
   } catch (error) {
     console.error("Error saving car:", error);
   }
-};
+}
 
 // Edit an existing car
 export async function editCar(car: CarModel) {
@@ -61,7 +65,7 @@ export async function editCar(car: CarModel) {
   } catch (error) {
     console.error("Error updating car:", error);
   }
-};
+}
 
 // Delete a car by ID
 export async function deleteCar(carId: string | number) {
@@ -78,4 +82,4 @@ export async function deleteCar(carId: string | number) {
     console.error("Error deleting car:", error);
     return false;
   }
-};
+}

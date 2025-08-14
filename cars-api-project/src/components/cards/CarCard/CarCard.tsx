@@ -30,7 +30,6 @@ import process from "process";
 const EditIcon = lazy(() => import("@mui/icons-material/Edit"));
 const DeleteIcon = lazy(() => import("@mui/icons-material/Delete"));
 
-
 const imageCache = new Set<string>();
 
 function CarCard(props: CarModel) {
