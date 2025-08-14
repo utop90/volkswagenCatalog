@@ -1,10 +1,14 @@
+/* mui */
 import { Card, Typography, CardMedia } from "@mui/material";
 import { cardStyle, cardMediaStyle } from "./styles";
+/* types */
 import { ImageCardProps } from "types/types";
+/* deno */
+import process from "process";
 
 const ImageCard = ({
   loading = true,
-  imageUrl = process.env.REACT_APP_DEFAULT_CAR_IMG,
+  imageUrl = process.env["REACT_APP_DEFAULT_CAR_IMG"],
   height = "",
   altText = "Image",
   loadingText = "Loading image...",
