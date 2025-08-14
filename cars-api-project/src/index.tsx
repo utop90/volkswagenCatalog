@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-/* theme */
+/* mui & theme */
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme/theme";
 import { StylesProvider } from "@mui/styles";
