@@ -1,4 +1,4 @@
-import * as React from "react";
+/* mui */
 import {
   Dialog,
   DialogTitle,
@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+/* types */
 import { CarModalProps } from "types/types";
 
 export default function CarReusableModal({

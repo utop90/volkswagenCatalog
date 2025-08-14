@@ -177,7 +177,7 @@ describe("Home Page - Integration test", () => {
   it("removes a car when clicking the remove button", async () => {
     render(<Home />, { wrapper: ProviderWrapper });
 
-    let cards = await screen.findAllByTestId("car-card");
+    const cards = await screen.findAllByTestId("car-card");
     const firstCard = cards[0];
     const carName = firstCard.textContent?.trim().split("\n")[0];
 

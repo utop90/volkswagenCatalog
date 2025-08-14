@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import './App.css';
 import Home from './pages/Home/Home';
 
