@@ -1,7 +1,10 @@
 /* types */
 import { apiResponse, CarModel } from "types/types";
+/* deno */
+import process from "process";
 
-const API_URL = process.env.REACT_APP_API_URL as string;
+
+const API_URL = process.env["REACT_APP_API_URL"] as string;
 
 // Retrieve all Volkswagen cars
 export async function fetchVolkswagenCars() {
@@ -9,29 +12,6 @@ export async function fetchVolkswagenCars() {
   const data: apiResponse = await res.json();
   return data;
 }
-
-// Retrieve a car image from a specific model from google
-export async function fetchCarImageGoogle(model: string): Promise<string> {
-  const apiKey = process.env.REACT_APP_GOOGLE_API_KEY || '';
-  const cseId = process.env.REACT_APP_GOOGLE_CSE_ID || '';
-  const baseUrl = process.env.REACT_APP_GOOGLE_SEARCH_URL || '';
-  const defaultMake = process.env.REACT_APP_CAR_MAKE || '';
-  const query = `${defaultMake} ${model}`.trim();
-
-  const url = `${baseUrl}?key=${apiKey}&cx=${cseId}&searchType=image&q=${encodeURIComponent(query)}&num=1`;
-
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    if (data.items && data.items.length > 0) {
-      return data.items[0].link;
-    }
-    return '';
-  } catch (error) {
-    console.error('Error fetching image from Google API:', error);
-    return '';
-  }
-};
 
 // Add a new car to the catalog 
 export async function addNewCar(carData: { model: string; year: string | number; description?: string; photo?: string }) {
