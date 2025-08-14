@@ -1,12 +1,12 @@
 /* types */
-import { apiResponse, CarModel } from 'types/types';
+import { apiResponse, CarModel } from "types/types";
 /* react utils */
-import { useEffect, useState } from 'react';
-import { fetchVolkswagenCars } from 'api/carsApi';
+import { useEffect, useState } from "react";
+import { fetchVolkswagenCars } from "api/carsApi";
 /* redux */
-import { useDispatch, useSelector } from 'react-redux';
-import { setCars } from 'reduxStore/slices/carsSlice';
-import { RootState } from 'reduxStore/store';
+import { useDispatch, useSelector } from "react-redux";
+import { setCars } from "reduxStore/slices/carsSlice";
+import { RootState } from "reduxStore/store";
 
 export function useVolkswagenModels() {
   const dispatch = useDispatch();
@@ -31,12 +31,12 @@ export function useVolkswagenModels() {
         setLoading(true);
         setError(null);
         const response = await fetchVolkswagenCars();
-        if (!response) throw new Error('Request error');
+        if (!response) throw new Error("Request error");
         const data: apiResponse = response;
         dispatch(setCars(data.result));
         setModels(data.result);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Unknown error');
+        setError(err instanceof Error ? err.message : "Unknown error");
       } finally {
         setLoading(false);
       }
