@@ -18,14 +18,14 @@ export default function CarReusableModal({
   children,
   actions,
   maxWidth = "sm",
-  fullWidth = true,
+  fullScreen = false,
 }: CarModalProps) {
   return (
     <Dialog
       open={open}
       onClose={onClose}
       maxWidth={maxWidth}
-      fullWidth={fullWidth}
+      fullScreen={fullScreen}
     >
       {title && (
         <DialogTitle sx={{ m: 0, p: 2 }}>

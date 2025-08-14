@@ -92,7 +92,7 @@ export default function CarFormModal({
   };
 
   return (
-    <CarModal open={open} onClose={onClose} title={title} fullWidth={isMobile}>
+    <CarModal open={open} onClose={onClose} title={title} fullScreen={isMobile}>
       <form onSubmit={handleSubmit}>
         <Typography variant="subtitle1" gutterBottom>
           {description}

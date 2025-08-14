@@ -47,7 +47,7 @@ export interface CarModalProps {
   children: React.ReactNode;
   actions?: React.ReactNode;
   maxWidth?: "xs" | "sm" | "md" | "lg" | "xl";
-  fullWidth?: boolean;
+  fullScreen?: boolean;
 }
 
 export interface CarFormModalProps {

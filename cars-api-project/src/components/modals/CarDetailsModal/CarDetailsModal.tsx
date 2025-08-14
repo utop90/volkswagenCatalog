@@ -20,7 +20,7 @@ export default function CarDetailsModal({
       open={open}
       onClose={onClose}
       title={`Details for ${model}`}
-      fullWidth={isMobile}
+      fullScreen={isMobile}
     >
       <Typography variant="subtitle1" gutterBottom>
         <strong>Model:</strong> {model}
