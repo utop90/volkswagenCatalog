@@ -70,10 +70,10 @@ export const carsSlice = createSlice({
       if (isDiesel !== undefined) {
         const dieselBool = Number(isDiesel) === 1 || isDiesel === true;
         filtered = filtered.filter((car) => {
-          // Diesel values are stored as 1 -> True and 0 -> False.
           if (typeof car.isDieselCar === "number") {
             return dieselBool ? car.isDieselCar === 1 : car.isDieselCar === 0;
           }
+          return false;
         });
       }
       state.cars = filtered;
