@@ -1,12 +1,16 @@
+/* local components */
 import CarFormModal from "components/modals/CarFormModal/CarFormModal";
 import DashboardControlPanel from "components/dashboards/DashboardControlPanel/DashboardControlPanel";
-import { Grid2 as Grid } from "@mui/material";
 import Dashboard from "components/dashboards/Dashboard/Dashboard";
-
+/* mui */
+import { Grid2 as Grid } from "@mui/material";
+/* react */
+import { useState } from "react";
 /* api */
 import { useVolkswagenModels } from "hooks/useVolkswagenModels";
-import { useState } from "react";
+/* redux */
 import { useDispatch } from "react-redux";
+/* utils */
 import { handleAddNewCar } from "components/utils";
 
 function Home() {
@@ -18,7 +22,7 @@ function Home() {
   if (error) return <p>{error}</p>;
 
   return (
-    <Grid size={12} padding={{lg: 4, md: 2 }}>
+    <Grid size={12} padding={{ lg: 4, md: 2 }}>
       <DashboardControlPanel onAddCar={() => setAddCarModalOpen(true)} />
       <Dashboard models={models} />
       <CarFormModal

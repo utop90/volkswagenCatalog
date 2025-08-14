@@ -8,22 +8,33 @@ import theme from "theme/theme";
 import { PaginationWithTitleProps } from "types/types";
 
 /* icons */
-const KeyboardArrowLeftIcon = lazy(() => import("@mui/icons-material/KeyboardArrowLeft"));
-const KeyboardArrowRightIcon = lazy(() => import("@mui/icons-material/KeyboardArrowRight"));
+const KeyboardArrowLeftIcon = lazy(
+  () => import("@mui/icons-material/KeyboardArrowLeft")
+);
+const KeyboardArrowRightIcon = lazy(
+  () => import("@mui/icons-material/KeyboardArrowRight")
+);
 
 export default function PaginationWithTitle({
   page,
   totalPages,
   handlePrev,
   handleNext,
-  classes
+  classes,
 }: PaginationWithTitleProps) {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isPrevDisabled = page === 1;
   const isNextDisabled = page === totalPages;
 
   return (
-    <Grid container size={12} display="flex" alignItems="center" justifyContent="center" spacing={2}>
+    <Grid
+      container
+      size={12}
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      spacing={2}
+    >
       <Grid size="auto">
         {!isMobile && (
           <PaginationButton

@@ -27,7 +27,12 @@ function Dashboard({ models }: DashboardProps) {
   return (
     <>
       <Suspense fallback={<p>Loading car cards...</p>}>
-        <Grid container spacing={3} justifyContent="center" padding={isMobile ? 2 : undefined}>
+        <Grid
+          container
+          spacing={3}
+          justifyContent="center"
+          padding={isMobile ? 2 : undefined}
+        >
           {currentModels.map((car) => (
             <Grid
               key={car.id}
