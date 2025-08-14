@@ -58,7 +58,8 @@ export default function CarFormModal({
       };
     } else {
       // Add car mode --> We generate a new id
-      const lastId = cars.length > 0 ? Math.max(...cars.map((c) => Number(c.id))) : 0;
+      const lastId =
+        cars.length > 0 ? Math.max(...cars.map((c) => Number(c.id))) : 0;
       carToSend = { ...car, id: (lastId + 1).toString() };
     }
 
