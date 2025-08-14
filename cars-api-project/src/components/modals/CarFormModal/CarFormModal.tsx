@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Typography, TextField, Button, Box } from "@mui/material";
+import {
+  Typography,
+  TextField,
+  Button,
+  Box,
+  useMediaQuery,
+} from "@mui/material";
 import { useSelector } from "react-redux";
 import CarModal from "components/modals/CarReusableModal/CarReusableModal";
 import { CarFormModalProps, CarModel } from "types/types";
 import { RootState } from "reduxStore/store";
+import theme from "theme/theme";
 
 export default function CarFormModal({
   open,
@@ -14,6 +21,7 @@ export default function CarFormModal({
   carToEdit,
 }: CarFormModalProps & { carToEdit?: CarModel }) {
   const cars = useSelector((state: RootState) => state.cars.cars);
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [car, setCar] = useState<CarModel>({
     id: "",
@@ -79,7 +87,7 @@ export default function CarFormModal({
   };
 
   return (
-    <CarModal open={open} onClose={onClose} title={title}>
+    <CarModal open={open} onClose={onClose} title={title} fullWidth={isMobile}>
       <form onSubmit={handleSubmit}>
         <Typography variant="subtitle1" gutterBottom>
           {description}
