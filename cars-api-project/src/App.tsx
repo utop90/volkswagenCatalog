@@ -1,12 +1,12 @@
-import { Suspense } from 'react';
-import Home from './pages/Home/Home';
+import { Suspense } from "react";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-    <Suspense fallback={<p>Loading dashboard...</p>}>
-      <Home />
-    </Suspense>
+      <Suspense fallback={<p>Loading dashboard...</p>}>
+        <Home />
+      </Suspense>
     </div>
   );
 }
