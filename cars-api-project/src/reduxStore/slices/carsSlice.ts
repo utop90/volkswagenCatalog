@@ -42,10 +42,13 @@ export const carsSlice = createSlice({
       updateList(state.originalCars);
     },
 
-    //Filter cars by year range and/or diesel option 
+    //Filter cars by year range and/or diesel option
     filterCars: (
       state,
-      action: PayloadAction<{ yearRange?: YearsRange; isDiesel?: boolean | number }>
+      action: PayloadAction<{
+        yearRange?: YearsRange;
+        isDiesel?: boolean | number;
+      }>
     ) => {
       const { yearRange, isDiesel } = action.payload;
       let filtered = [...state.originalCars];

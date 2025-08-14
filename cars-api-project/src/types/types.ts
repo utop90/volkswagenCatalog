@@ -77,7 +77,7 @@ export enum SORT_OPTIONS {
   NEW = "new",
   MID = "mid",
   OLD = "old",
-  AZ = "az"
+  AZ = "az",
 }
 export interface PaginationWithTitleProps {
   page: number;
@@ -112,4 +112,3 @@ export interface CarDetailsModalProps {
   description?: string;
   imageUrl: string | undefined;
 }
-
