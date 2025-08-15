@@ -54,7 +54,7 @@ export default function DashboardControlPanel({
             variant="contained"
             startIcon={<DirectionsCarIcon />}
             onClick={onAddCar}
-            aria-label="add-button-icon"
+            aria-label="Add Car"
           >
             Add Car
           </Button>
@@ -66,7 +66,7 @@ export default function DashboardControlPanel({
             variant="text"
             startIcon={<FilterAltIcon />}
             onClick={(e) => setFilterAnchor(e.currentTarget)}
-            aria-label="filter-button-icon"
+            aria-label="Filter Cars"
           >
             Filter Cars
           </Button>
@@ -75,7 +75,7 @@ export default function DashboardControlPanel({
             variant="text"
             startIcon={<SortIcon />}
             onClick={(e) => setSortAnchor(e.currentTarget)}
-            aria-label="sort-button-icon"
+            aria-label="Sort Cars"
           >
             Sort Cars
           </Button>
@@ -84,7 +84,7 @@ export default function DashboardControlPanel({
             variant="text"
             color="error"
             startIcon={<RestartAltIcon />}
-            aria-label="reset-button-icon"
+            aria-label="Reset Cars"
             onClick={() => {
               dispatch(resetCars());
               setYearRange(undefined);
