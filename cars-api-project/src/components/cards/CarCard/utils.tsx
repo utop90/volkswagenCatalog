@@ -9,7 +9,6 @@ export function preloadImageLCP(url: string) {
   link.rel = "preload";
   link.as = "image";
   link.href = url;
-  link.fetchPriority ="high";
   document.head.appendChild(link);
 }
 //Optimizes image loading in a React app by preventing repeated downloads and managing the loading state.**
