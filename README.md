@@ -36,7 +36,7 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 
 ### :camera: **Demo**
 
-![Demo GIF](https://github.com/utop90/volkswagenCatalog/raw/main/cars-api-project/src/assets/gif/demo.gif)
+![Demo GIF](cars-api-project/src/assets/gifs/demo.gif)
 
 ***
 
@@ -72,8 +72,9 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 
 | Color           | Hex       | Sample                                         |
 | --------------- | --------- | ----------------------------------------------|
-| Primary Color   | #001b40   | ![#001b40](https://via.placeholder.com/20/001b40/001b40.png) |
-| Secondary Color | #ECEFF1   | ![#ECEFF1](https://via.placeholder.com/20/ECEFF1/ECEFF1.png) |
+| Primary Color   | #001b40   | ![#001b40](https://singlecolorimage.com/get/001b40/20x20) |
+| Secondary Color | #ECEFF1   | ![#ECEFF1](https://singlecolorimage.com/get/eceff1/20x20) |
+
 
 ***
 
@@ -164,7 +165,7 @@ This functionality makes browsing and managing the Volkswagen catalog simple and
 
 - **AI Tool Used:** Perplexity.ai  
 
-- **Why I Use It:** Perplexity.ai is an up-to-date AI tool that provides highly accurate answers by combining advanced language models with real-time web data. Its ability to deliver reliable, current information makes it invaluable.
+- **Why I Use It:** Perplexity.ai is an up-to-date AI tool that provides highly accurate answers by combining advanced language models with real-time web data. Its ability to deliver reliable, current information makes it very useful.
 
 - **How I’ve Used It:**  
   - To generate ideas for improving accessibility and performance metrics in the app.  
@@ -176,6 +177,8 @@ This functionality makes browsing and managing the Volkswagen catalog simple and
 ***
 
 ## :compass: **Responsive Solutions**
+
+![Responsive Demo](cars-api-project/src/assets/gifs/responsive-demo.gif)
 
 For achieving responsiveness, I knew from the start that I wanted to leverage the MUI library. This library, which integrates seamlessly with React, provides a powerful grid system that makes creating a responsive layout quick and straightforward—perfect for displaying my car catalog. Additionally, many of MUI’s components come with built-in props to control sizing. For example, by simply adding an "isFullScreen" prop, I was able to make modals span the full width on mobile devices. MUI also offers a default responsive typography system, which is a great advantage for maintaining readability across different screen sizes.
 
@@ -189,7 +192,7 @@ All components were developed with **reusability** and **maintainability** in mi
 
 Some examples of reusable components included in the app are:
 
-- **Reusable Modal:** CarReusableModal. This modal serves as the base for all other modals in the application, such as those for editing and adding cars.  
+- **CarReusableModal:** . This modal serves as the base for all other modals in the application, such as those for editing and adding cars.  
 - **PaginationButton:** This component is used to create both pagination buttons in the app, for navigating forward and backward.  
 - **CarCard:** A flexible component customizable via props to display different types of information depending on the context.
 
@@ -228,7 +231,7 @@ Some of the key strategies and resources I used include:
 
 Thanks to these optimizations, the app achieves impressive Lighthouse performance scores, resulting in a faster, smoother, and more enjoyable user experience.
 
- ![Lighthouse Metrics](https://github.com/utop90/volkswagenCatalog/raw/main/cars-api-project/src/assets/images/lighthouse-metrics.webp)
+![Lighthouse Metrics](cars-api-project/src/assets/images/lighthouse-metrics.webp)
   
 
 ***
