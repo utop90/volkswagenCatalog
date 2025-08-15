@@ -16,7 +16,7 @@ import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import { Box, Button, Typography } from "@mui/material";
 import { useStyles } from "./styles";
 /* assets */
-import logo from "assets/images/logo.png";
+import logo from "assets/images/logo.webp";
 
 export default function DashboardControlPanel({
   onAddCar,
