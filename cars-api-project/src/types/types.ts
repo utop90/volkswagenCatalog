@@ -39,6 +39,8 @@ export interface PaginationButtonProps {
   disabled?: boolean;
   icon: React.ReactNode;
   ariaLabel: string;
+  enableKeyPress?: boolean;
+  keyDirection?: "left" | "right";
 }
 export interface CarModalProps {
   open: boolean;

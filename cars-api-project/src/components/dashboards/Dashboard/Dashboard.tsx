@@ -7,7 +7,7 @@ import { useStyles } from "./styles";
 import { DashboardProps } from "types/types";
 /* local components */
 import theme from "theme/theme";
-import PaginationWithTitle from "components/pagination/PaginationWithTitle/PaginationWithTitle";
+import PaginationButtons from "components/pagination/PaginationButtons/PaginationButtons";
 
 const CarCard = lazy(() => import("components/cards/CarCard/CarCard"));
 
@@ -48,7 +48,7 @@ function Dashboard({ models }: DashboardProps) {
           ))}
         </Grid>
         <Grid container size={12}>
-          <PaginationWithTitle
+          <PaginationButtons
             page={page}
             totalPages={totalPages}
             handlePrev={handlePrev}

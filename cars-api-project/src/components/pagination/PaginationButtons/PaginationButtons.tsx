@@ -15,7 +15,7 @@ const KeyboardArrowRightIcon = lazy(
   () => import("@mui/icons-material/KeyboardArrowRight")
 );
 
-export default function PaginationWithTitle({
+export default function PaginationButtons({
   page,
   totalPages,
   handlePrev,
@@ -42,6 +42,8 @@ export default function PaginationWithTitle({
             onClick={handlePrev}
             disabled={isPrevDisabled}
             ariaLabel="Go to the previous page"
+            enableKeyPress
+            keyDirection="left"
             icon={
               <Box
                 className={
@@ -65,6 +67,8 @@ export default function PaginationWithTitle({
             onClick={handleNext}
             disabled={isNextDisabled}
             ariaLabel="Go to the next page"
+            enableKeyPress
+            keyDirection="right"
             icon={
               <Box
                 className={

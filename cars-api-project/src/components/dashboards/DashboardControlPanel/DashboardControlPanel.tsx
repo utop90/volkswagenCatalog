@@ -41,7 +41,7 @@ export default function DashboardControlPanel({
     <Box className={classes.controlPanelContainer}>
       <Box className={classes.panelRow}>
         <Box className={classes.logoWrapper}>
-          <img src={logo} alt="Volkswagen Logo" className={classes.logo} />
+          <img src={logo} alt="Volkswagen Logo" className={classes.logo} aria-label="Volkswagen Logo" />
           <Typography variant="h5" className={classes.logoText}>
             Volkswagen Catalog
           </Typography>
@@ -54,6 +54,7 @@ export default function DashboardControlPanel({
             variant="contained"
             startIcon={<DirectionsCarIcon />}
             onClick={onAddCar}
+            aria-label="add-button-icon"
           >
             Add Car
           </Button>
@@ -65,6 +66,7 @@ export default function DashboardControlPanel({
             variant="text"
             startIcon={<FilterAltIcon />}
             onClick={(e) => setFilterAnchor(e.currentTarget)}
+            aria-label="filter-button-icon"
           >
             Filter Cars
           </Button>
@@ -73,6 +75,7 @@ export default function DashboardControlPanel({
             variant="text"
             startIcon={<SortIcon />}
             onClick={(e) => setSortAnchor(e.currentTarget)}
+            aria-label="sort-button-icon"
           >
             Sort Cars
           </Button>
@@ -81,6 +84,7 @@ export default function DashboardControlPanel({
             variant="text"
             color="error"
             startIcon={<RestartAltIcon />}
+            aria-label="reset-button-icon"
             onClick={() => {
               dispatch(resetCars());
               setYearRange(undefined);
