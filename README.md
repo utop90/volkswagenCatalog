@@ -258,6 +258,8 @@ I have implemented several key features to ensure the Volkswagen catalog app is 
 
 ## :compass: **CI/CD Setup Discussion**
 
+[![React + TypeScript CI/CD](https://github.com/utop90/volkswagenCatalog/actions/workflows/main.yml/badge.svg)](https://github.com/utop90/volkswagenCatalog/actions/workflows/main.yml)
+
 Implementing a CI/CD pipeline was a challenge since this was my first time setting up such a workflow. I initially chose to use GitHub Actions with the Deno preset, but encountered several issues because the preset did not fully align with the specific requirements of my application.
 
 To address this, I decided to create a custom YAML configuration file for GitHub Actions. With the assistance of AI, I was able to craft a workflow file that reliably runs ESLint, executes tests, and verifies that all parts of the application work correctly at each stage of the pipeline.
