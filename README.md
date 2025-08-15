@@ -1,6 +1,6 @@
 
 # **Volkswagen Catalog React App**
-  [![React + TypeScript CI/CD](https://github.com/utop90/volkswagenCatalog/actions/workflows/main.yml/badge.svg)]![Build Status]
+[![React + TypeScript CI/CD](https://github.com/utop90/volkswagenCatalog/actions/workflows/main.yml/badge.svg)](https://github.com/utop90/volkswagenCatalog/actions/workflows/main.yml)
 
 
 Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, manage, and customize your favorite VW models. This web app is built with usability, performance, and accessibility in mind, allowing you to navigate comfortably through the entire car portfolio of the company.
