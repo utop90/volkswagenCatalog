@@ -165,7 +165,7 @@ This functionality makes browsing and managing the Volkswagen catalog simple and
 
 - **AI Tool Used:** Perplexity.ai  
 
-- **Why I Use It:** Perplexity.ai is an up-to-date AI tool that provides highly accurate answers by combining advanced language models with real-time web data. Its ability to deliver reliable, current information makes it invaluable.
+- **Why I Use It:** Perplexity.ai is an up-to-date AI tool that provides highly accurate answers by combining advanced language models with real-time web data. Its ability to deliver reliable, current information makes it very useful.
 
 - **How I’ve Used It:**  
   - To generate ideas for improving accessibility and performance metrics in the app.  
