@@ -3,7 +3,7 @@
   
 Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, manage, and customize your favorite VW models. This web app is built with usability, performance, and accessibility in mind, allowing you to navigate comfortably through the entire car portfolio of the company.
 
-[![Icono de link](https://img.icons8.com/ios-filled/24/000000/link.png)](https://tusitio.com) Link to the Volkswagen App.
+[![Link icon](https://img.icons8.com/ios-filled/24/000000/link.png)](https://volkswagen-catalog.vercel.app/) [link to the site](https://volkswagen-catalog.vercel.app/)
   
 **Author** : Sara Bengoa Rocandio.
   
@@ -11,7 +11,7 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 # :notebook_with_decorative_cover: **Table of Contents**
 
 - [About the Project](#star2-about-the-project)
-  - [Screenshots](#camera-screenshots)
+  - [Demo](#camera-screenshots)
   - [Tech Stack](#space_invader-tech-stack)
   - [Features](#dart-features)
   - [Color Reference](#art-color-reference)  
@@ -34,11 +34,9 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 
 ## :star2: **About the Project**
 
-### :camera: **Screenshots**
+### :camera: **Demo**
 
-
-  
-
+![My GIF](https://jumpshare.com/s/7uTUqr7lMJlWlLjm6mBK)
 
 ***
 
@@ -72,9 +70,11 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 
 ### :art: **Color Reference**
 
-| Color           | Hex                                      |
-| --------------- | ---------------------------------------- |
-| Primary Color   | ![#222831](https://via.placeholder.com/10/222831? Color | ![#393E46](https://via.placeholder.com/10/393E46 |
+| Color          | Hex       | Sample                                        |
+| -------------- | --------- | --------------------------------------------- |
+| Primary Color  | #001b40   | ![#001b40](https://via.placeholder.com/20/001b40?text=+) |
+| Secondary Color| #ECEFF1   | ![#ECEFF1](https://via.placeholder.com/20/ECEFF1?text=+) |
+
 
 ***
 
