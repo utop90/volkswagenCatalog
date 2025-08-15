@@ -192,7 +192,7 @@ All components were developed with **reusability** and **maintainability** in mi
 
 Some examples of reusable components included in the app are:
 
-- **Reusable Modal:** CarReusableModal. This modal serves as the base for all other modals in the application, such as those for editing and adding cars.  
+- **CarReusableModal:** . This modal serves as the base for all other modals in the application, such as those for editing and adding cars.  
 - **PaginationButton:** This component is used to create both pagination buttons in the app, for navigating forward and backward.  
 - **CarCard:** A flexible component customizable via props to display different types of information depending on the context.
 
