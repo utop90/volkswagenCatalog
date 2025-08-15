@@ -2,6 +2,7 @@
   "name": "cars-api-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://utop90/VolkswagenCatalog",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +59,7 @@
     "@types/redux-mock-store": "^1.5.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
     "node-polyfill-webpack-plugin": "^4.1.0",
