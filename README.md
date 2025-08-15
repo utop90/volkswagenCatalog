@@ -1,23 +1,12 @@
 
-
+# **Volkswagen Catalog React App**
   
-  Volkswagen Catalog React App
+Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, manage, and customize your favorite VW models. This web app is built with usability, performance, and accessibility in mind, allowing you to navigate comfortably through the entire car portfolio of the company.
 
+[![Icono de link](https://img.icons8.com/ios-filled/24/000000/link.png)](https://tusitio.com) Link to the Volkswagen App.
   
-    Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, manage, and customize your favorite VW models. This web app is built with usability, performance, and accessibility in mind, allowing you to navigate comfortably through the entire car portfolio of the company.
+**Author** : Sara Bengoa Rocandio.
   
-
-  
-    Link: https://volkswagen-catalog.vercel.app/
-  
-
-  
-    Author: Sara Bengoa Rocandio
-  
-
-
-
-***
 
 # :notebook_with_decorative_cover: **Table of Contents**
 
@@ -175,7 +164,6 @@ This functionality makes browsing and managing the Volkswagen catalog simple and
 ## :compass: **AI Usage Discussion**
 
 - **AI Tool Used:** Perplexity.ai  
-  **Link:** (LINK TO PERPLEXITY)
 
 - **Why I Use It:** Perplexity.ai is an up-to-date AI tool that provides highly accurate answers by combining advanced language models with real-time web data. Its ability to deliver reliable, current information makes it invaluable.
 
