@@ -11,7 +11,7 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 # :notebook_with_decorative_cover: **Table of Contents**
 
 - [About the Project](#star2-about-the-project)
-  - [Demo](#camera-screenshots)
+  - [Demo](#camera-demo)
   - [Tech Stack](#space_invader-tech-stack)
   - [Features](#dart-features)
   - [Color Reference](#art-color-reference)  
@@ -36,7 +36,7 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 
 ### :camera: **Demo**
 
-![My GIF](https://jumpshare.com/s/7uTUqr7lMJlWlLjm6mBK)
+![Demo GIF](https://jumpshare.com/s/7uTUqr7lMJlWlLjm6mBK.gif)
 
 ***
 
@@ -70,11 +70,10 @@ Welcome to the ultimate Volkswagen catalog – your one-stop place to browse, ma
 
 ### :art: **Color Reference**
 
-| Color          | Hex       | Sample                                        |
-| -------------- | --------- | --------------------------------------------- |
-| Primary Color  | #001b40   | ![#001b40](https://via.placeholder.com/20/001b40?text=+) |
-| Secondary Color| #ECEFF1   | ![#ECEFF1](https://via.placeholder.com/20/ECEFF1?text=+) |
-
+| Color           | Hex       | Sample                                         |
+| --------------- | --------- | ----------------------------------------------|
+| Primary Color   | #001b40   | ![#001b40](https://via.placeholder.com/20/001b40/001b40.png) |
+| Secondary Color | #ECEFF1   | ![#ECEFF1](https://via.placeholder.com/20/ECEFF1/ECEFF1.png) |
 
 ***
 
