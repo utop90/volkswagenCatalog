@@ -1,7 +1,5 @@
 /* types */
 import { apiResponse, CarModel } from "types/types";
-/* deno */
-import process from "process";
 
 const API_URL = process.env.REACT_APP_API_URL as string;
 

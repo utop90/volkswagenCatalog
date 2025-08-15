@@ -3,8 +3,6 @@ import { Card, Typography, CardMedia } from "@mui/material";
 import { cardStyle, cardMediaStyle } from "./styles";
 /* types */
 import { ImageCardProps } from "types/types";
-/* deno */
-import process from "process";
 
 const ImageCard = ({
   loading = true,

@@ -23,8 +23,8 @@ import {
   handleRemoveCar,
 } from "components/utils";
 
-/* deno */
-import process from "process";
+/* utils */
+import { loadImage, preloadImageLCP } from "./utils";
 
 /* icons */
 const EditIcon = lazy(() => import("@mui/icons-material/Edit"));
@@ -44,20 +44,8 @@ function CarCard(props: CarModel) {
   const imageUrl = photo ?? process.env.REACT_APP_DEFAULT_CAR_IMG;
 
   useEffect(() => {
-    if (imageCache.has(imageUrl)) {
-      setLoading(false);
-      return;
-    }
-    const img = new Image();
-    img.src = imageUrl;
-    img.loading = "eager";
-    img.onload = () => {
-      imageCache.add(imageUrl);
-      setLoading(false);
-    };
-    img.onerror = () => {
-      setLoading(false);
-    };
+    preloadImageLCP(imageUrl);
+    loadImage(imageUrl, imageCache, setLoading);
   }, [imageUrl]);
 
   return (
@@ -118,6 +106,7 @@ function CarCard(props: CarModel) {
             loading="lazy"
             className={classes.carCardImage}
             style={{ display: loading ? "none" : "block" }}
+            fetchPriority="high"
             onLoad={() => {
               imageCache.add(imageUrl);
               setLoading(false);
