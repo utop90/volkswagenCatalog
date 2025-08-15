@@ -24,7 +24,7 @@ import {
 } from "components/utils";
 
 /* utils */
-import { loadImage } from "./utils";
+import { loadImage, preloadImageLCP } from "./utils";
 
 /* icons */
 const EditIcon = lazy(() => import("@mui/icons-material/Edit"));
@@ -45,6 +45,9 @@ function CarCard(props: CarModel ) {
   const imageUrl = photo ?? process.env.REACT_APP_DEFAULT_CAR_IMG;
 
   useEffect(() => {
+    if (isLCP) {
+      preloadImageLCP(imageUrl);
+    }
     loadImage(imageUrl, imageCache, setLoading);
   }, [imageUrl, isLCP]);
 
