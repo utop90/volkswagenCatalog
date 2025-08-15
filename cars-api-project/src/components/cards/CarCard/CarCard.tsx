@@ -32,10 +32,11 @@ const DeleteIcon = lazy(() => import("@mui/icons-material/Delete"));
 
 const imageCache = new Set<string>();
 
-function CarCard(props: CarModel) {
+function CarCard(props: CarModel ) {
   const { model, id, description, year, photo } = props;
   const dispatch = useDispatch();
   const classes = useStyles();
+  const isLCP = id === "1"; // Image with Largest Contentful Paint
 
   const [open, setOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
@@ -44,9 +45,11 @@ function CarCard(props: CarModel) {
   const imageUrl = photo ?? process.env.REACT_APP_DEFAULT_CAR_IMG;
 
   useEffect(() => {
-    preloadImageLCP(imageUrl);
+    if (isLCP) {
+      preloadImageLCP(imageUrl);
+    }
     loadImage(imageUrl, imageCache, setLoading);
-  }, [imageUrl]);
+  }, [imageUrl, isLCP]);
 
   return (
     <>
@@ -103,10 +106,10 @@ function CarCard(props: CarModel) {
             src={imageUrl}
             alt={model}
             height={180}
-            loading="lazy"
+            loading={id > "8" ? "lazy" : "eager"}
             className={classes.carCardImage}
             style={{ display: loading ? "none" : "block" }}
-            fetchPriority="high"
+            fetchPriority={isLCP ? "high" : id > "8" ? "low" : "auto"}
             onLoad={() => {
               imageCache.add(imageUrl);
               setLoading(false);
