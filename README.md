@@ -206,6 +206,7 @@ The project is structured by **functionality** to maintain clarity and scalabili
 - **reduxStore:** Contains all Redux-related files including the store and slices for state management.  
 - **assets:** Stores various resources like images used throughout the application.  
 - **theme:** Defines the app’s main theme, including color variables and typography settings.  
+- **hooks:** Store the react hooks used in the application, in this case the hook that handles the call to fetch all cars used in the catalog.
 - **types:** Contains all TypeScript typings used across components for type safety and consistency.
 
 This approach ensures a clean, maintainable codebase where components and logic are well organized and easy to understand.
